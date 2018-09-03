@@ -27,13 +27,13 @@ public class EchoClient {
 		bootstrap.handler(new EchoClientFilter());
         // 连接服务端
         Channel ch = bootstrap.connect(host, port).sync().channel();
-        star(ch);
+        sendData(ch);
 	}
 	
-	public static void star(Channel ch) throws IOException{
+	public static void sendData(Channel ch) throws IOException{
         String str="Hello Netty";
         ch.writeAndFlush(str+ "\r\n");
-        System.out.println("客户端发送数据:"+str);
+        System.out.println("sending data:"+str);
    }
 	
 	public static void main(String[] args) throws InterruptedException, IOException {
