@@ -45,6 +45,7 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
 	@SuppressWarnings("resource")
 	@Override
 	public void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request) throws Exception {
+		//If a WebSocket upgrade is requested,increments the reference count (retain) and passes it to the next ChannelInboundHandler
 		if (wsUri.equalsIgnoreCase(request.uri())) {
 			ctx.fireChannelRead(request.retain());
 		} else {
