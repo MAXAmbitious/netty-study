@@ -5,6 +5,11 @@ WebSocket协议支持（在受控环境中运行不受信任的代码的）客�
 在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” 。在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。
 
 # Netty—WebSocket demo
+
+**整体架构图**
+
+![image](https://note.youdao.com/yws/api/personal/file/48209B98A71743B6B7E43EF23A19781C?method=download&shareKey=96f6b48a7e4fa8fb7bf3bfc93a632ab1)
+
 **自定义拦截器—HttpRequestHandler**
 
 ```
