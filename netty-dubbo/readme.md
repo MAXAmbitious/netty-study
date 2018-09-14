@@ -1,6 +1,14 @@
 # 前言
 Dubbo是基于Netty搭建的RPC框架，为了更好地理解Netty在Dubbo中的应用，仿照Dubbo搭建了一个简易版的RPC框架。
 
+# 概述
+**整个调用逻辑如下：**
+1、生产者服务端启动Netty服务端。
+2、消费者客户端通过JDK动态代理启动Netty客户端，通过注册中心地址连接生产者服务端，同时将接口调用信息（接口、方法、参数等）先序列化再发送给生产者服务端。
+3、生产者服务端接收消息并通过反射调用相应方法，然后返回调用结果给消费者。
+4、消费者接收生产者传来的调用结果。
+
+
 # 实现
 **新建DubboRequest类(相当于POJO)，作为消息载体**
 
@@ -407,6 +415,5 @@ I love you, 1314520
 服务端收到消息:   DubboRequest{interfaceClass=interface com.beidao.netty.dubbo.facade.api.IUserFacade, methodName='getUserName', paramTypes=[class java.lang.Long], args=[1314520]}
 
 ```
-# 总结
-生产者服务端启动Netty服务端，消费者客户端通过JDK动态代理启动Netty客户端连接生产者服务端，同时将接口调用信息（接口、方法、参数等）发送给生产者服务端，生产者服务端接收消息并通过反射调用相应方法。
 
+**源码地址：https://github.com/MAXAmbitious/netty-study/tree/master/netty-dubbo**
