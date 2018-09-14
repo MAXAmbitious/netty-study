@@ -3,7 +3,7 @@ package com.beidao.netty.dubbo.client;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-import com.beidao.netty.dubbo.DubboRequest;
+import com.beidao.netty.dubbo.facade.api.DubboRequest;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

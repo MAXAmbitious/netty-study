@@ -2,7 +2,7 @@ package com.beidao.netty.dubbo.sever;
 
 import java.lang.reflect.Method;
 
-import com.beidao.netty.dubbo.DubboRequest;
+import com.beidao.netty.dubbo.facade.api.DubboRequest;
 import com.beidao.netty.dubbo.facade.api.IUserFacade;
 import com.beidao.netty.dubbo.facade.impl.UserFacade;
 

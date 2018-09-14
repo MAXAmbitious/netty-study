@@ -1,4 +1,4 @@
-package com.beidao.netty.dubbo;
+package com.beidao.netty.dubbo.facade.api;
 
 import java.io.Serializable;
 import java.util.Arrays;
