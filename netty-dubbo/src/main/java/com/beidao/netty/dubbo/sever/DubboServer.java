@@ -12,6 +12,10 @@ import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
+/**
+ * @author 0200759
+ *
+ */
 public class DubboServer {
 
 	private int port;
