@@ -4,7 +4,7 @@ import com.beidao.netty.dubbo.facade.api.IUserFacade;
 
 /**
  * dubbo客户端(消费者)
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboClient {

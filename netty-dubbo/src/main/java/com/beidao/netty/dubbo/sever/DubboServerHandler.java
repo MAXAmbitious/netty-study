@@ -11,7 +11,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
  * netty-dubbo服务端拦截器
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboServerHandler extends ChannelInboundHandlerAdapter {

@@ -2,7 +2,7 @@ package com.beidao.netty.dubbo.facade.api;
 
 /**
  * dubbo api接口
- * @author 0200759
+ * @author beidao
  *
  */
 public interface IUserFacade {

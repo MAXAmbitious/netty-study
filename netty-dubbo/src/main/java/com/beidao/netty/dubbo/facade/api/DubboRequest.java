@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * dubbo请求类
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboRequest implements Serializable{

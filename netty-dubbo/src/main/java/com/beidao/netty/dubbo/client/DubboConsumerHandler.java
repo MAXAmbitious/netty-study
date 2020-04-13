@@ -21,7 +21,7 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
 
 /**
  * dubbo消费者拦截器
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboConsumerHandler implements InvocationHandler{
@@ -55,7 +55,7 @@ public class DubboConsumerHandler implements InvocationHandler{
 	/**
 	 * 
 	 * netty-dubbo消费者拦截器
-	 * @author 0200759
+	 * @author beidao
 	 *
 	 */
 	private class ConsumerHandler extends ChannelInboundHandlerAdapter{

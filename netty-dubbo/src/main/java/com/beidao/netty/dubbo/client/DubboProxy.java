@@ -4,7 +4,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * Dubbo代理类
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboProxy {

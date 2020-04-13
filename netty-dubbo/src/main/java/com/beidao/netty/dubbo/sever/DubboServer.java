@@ -13,7 +13,7 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
 /**
- * @author 0200759
+ * @author beidao
  *
  */
 public class DubboServer {
