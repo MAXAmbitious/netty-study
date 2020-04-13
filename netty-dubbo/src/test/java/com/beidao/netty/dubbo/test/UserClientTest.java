@@ -1,7 +1,9 @@
 package com.beidao.netty.dubbo.test;
 
+import com.alibaba.fastjson.JSON;
 import com.beidao.netty.dubbo.client.DubboProxy;
 import com.beidao.netty.dubbo.facade.api.IUserFacade;
+import com.beidao.netty.dubbo.facade.api.UserDTO;
 
 import junit.framework.TestCase;
 
@@ -18,6 +20,15 @@ public class UserClientTest extends TestCase{
 	 * 获取用户
 	 */
 	public void getUser() {
-		userFacade.getUserName(1L);
+		UserDTO userDTO = userFacade.getUserDTO(1L);
+		System.out.println(JSON.toJSONString(userDTO));
+	}
+	
+	/**
+	 * 获取用户名称
+	 */
+	public void getUserName() {
+		String name = userFacade.getUserName(1L);
+		System.out.println(JSON.toJSONString(name));
 	}
 }

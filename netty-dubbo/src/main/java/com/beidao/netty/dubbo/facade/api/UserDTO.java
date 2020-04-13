@@ -1,5 +1,6 @@
 package com.beidao.netty.dubbo.facade.api;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -7,7 +8,12 @@ import java.util.Date;
  * @author beidao
  *
  */
-public class UserDTO {
+public class UserDTO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3837463104209285025L;
 
 	/**
 	 * 主键id

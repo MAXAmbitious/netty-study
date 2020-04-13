@@ -8,10 +8,17 @@ package com.beidao.netty.dubbo.facade.api;
 public interface IUserFacade {
 
 	/**
-	 * 返回用户名接口
+	 * 根据id查询用户名称
 	 * @param string 
 	 * @return
 	 */
 	public String getUserName(Long id);
+
+	/**
+	 * 根据id查询用户信息
+	 * @param id
+	 * @return
+	 */
+	public UserDTO getUserDTO(Long id);
 
 }
